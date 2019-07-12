@@ -1,6 +1,6 @@
 *.pydevproject
 .project
-.metadata
+.metadata/
 .gradle
 bin/
 tmp/
@@ -15,4 +15,4 @@ local.properties
 .loadpath
 *.jar
 *.class
-*.module_prj
+*.module_prj.metadata
