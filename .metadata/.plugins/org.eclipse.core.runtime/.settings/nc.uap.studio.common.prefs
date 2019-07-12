@@ -1,8 +1,0 @@
-ENV_PK_DEVELOPER=1001ZE1000000002I2AD
-ENV_PK_DEVELOPORG=1001ZE1000000002I2AB
-EXCEPT_JAR_NC_HOME=nc.bs.framework.tool.config.+.jar\r\ntestbill.+.jar\r\n.*PROXY.jar
-FIELD_CLINET_PORT=9521
-FIELD_EX_MODULES=
-FIELD_NC_HOME=E\:\\Devlop\\projectbak\\Phillipine
-PROP_XML_TS=1559109576428
-eclipse.preferences.version=1
