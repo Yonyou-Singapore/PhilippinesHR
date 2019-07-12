@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="nc.uap.mde.launch">
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="nc.uap.mde.MiddlewareClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="nc.starter.test.JStarter"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="PhilippinesHR_hrss"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dnc.runMode=develop -Dnc.jstart.server=${FIELD_CLINET_IP} -Dnc.jstart.port=${FIELD_CLINET_PORT} -Xmx768m -XX:MaxPermSize=256m"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${FIELD_NC_HOME}"/>
+</launchConfiguration>

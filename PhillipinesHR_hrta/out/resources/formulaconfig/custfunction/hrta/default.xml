@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula-array>
+<!--formula>
+  <customType>0</customType>
+  <functionName>trimzero</functionName>
+  <functionClass>nc.vo.pub.formulaset.function.TrimZero</functionClass>
+</formula-->
+<formula>
+  <customType>9</customType>
+  <functionName>directsum</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitThreeParaFunc</functionClass>
+</formula>
+<formula>
+  <customType>9</customType>
+  <functionName>directcount</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitTwoParaFunc</functionClass>
+</formula>
+<formula>
+  <customType>9</customType>
+  <functionName>previousdayvalue</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitTwoParaFunc</functionClass>
+</formula>
+
+<formula>
+  <customType>9</customType>
+  <functionName>curwkday</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+
+<formula>
+  <customType>9</customType>
+  <functionName>weekday</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitOneParaFunc</functionClass>
+</formula>
+
+<formula>
+  <customType>9</customType>
+  <functionName>curhlday</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+<!-- 新增当日工作日工作类型 for 菲律宾(PH) xm 2018.11.13-->
+<formula>
+  <customType>9</customType>
+  <functionName>curhldayPH</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+
+<formula>
+  <customType>9</customType>
+  <functionName>holiday</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitOneParaFunc</functionClass>
+</formula>
+
+<formula>
+  <customType>9</customType>
+  <functionName>gxdays</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitTwoParaFunc</functionClass>
+</formula>
+<formula>
+  <customType>9</customType>
+  <functionName>leavedays</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitTwoParaFunc</functionClass>
+</formula>
+<!-- 菲律宾本地化：增加工时计算函数 by Ethan Wu 2019-03-28 start -->
+<formula>
+  <customType>9</customType>
+  <functionName>getDaytimeOTHour</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+<formula>
+  <customType>9</customType>
+  <functionName>getNighttimeOTHour</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+<formula>
+  <customType>9</customType>
+  <functionName>getNighttimeWorkShiftHour</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+<formula>
+  <customType>9</customType>
+  <functionName>getDaytimeWorkShiftHour</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+<formula>
+  <customType>9</customType>
+  <functionName>getDaytimeexd8</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+<formula>
+  <customType>9</customType>
+  <functionName>getNighttimeexd8</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+<formula>
+  <customType>9</customType>
+  <functionName>getNightHourRestIncl</functionName>
+  <functionClass>nc.ui.hr.formula.func.HrDigitFunc</functionClass>
+</formula>
+<!-- 菲律宾本地化：增加工时计算函数 by Ethan Wu 2019-03-28 end -->
+</formula-array>

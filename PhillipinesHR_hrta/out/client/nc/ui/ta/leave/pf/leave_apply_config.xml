@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<import resource="classpath:nc/ui/hr/pf/hr_pf_apply.xml" />
+	<import resource="leave_base_config.xml" />
+	
+	<!-- 管理应用模型 -->
+	<bean id="appModel" class="nc.ui.ta.leave.pf.model.LeaveAppModel">
+		<property name="billType" value="6404" />
+		<property name="approveSite" value="false" /> <!--指定为false,表示申请节点-->
+		<property name="autoGenerateBillCode" value="true" />
+		<property name="service" ref="manageModelService" />
+		<property name="businessObjectAdapterFactory" ref="boadatorfactory" /> 
+		<property name="context" ref="context" />
+	</bean>
+
+	<bean id="listViewActions" class="nc.ui.ta.leave.pf.DynamicActionContainer">
+		<constructor-arg>
+			<ref bean="listView"/>
+		</constructor-arg>
+		<property name="model" ref="appModel" />
+		<property name="actions">
+			<list>
+				<ref bean="addActionGroup"/>
+				<ref bean="editAction"/>
+				<ref bean="deleteAction"/>
+				<ref bean="copyAction"/>				
+				<ref bean="separatorAction" />				
+				<ref bean="queryAction"/>
+				<ref bean="refreshAction"/>				
+				<ref bean="separatorAction" />				
+				<ref bean="commitActionGroup"/>				
+				<ref bean="assistActionGroup" />				
+				<ref bean="separatorAction" />				
+				<ref bean="listPrintActionGroup"/>
+			</list>
+		</property>
+	</bean>
+ 
+	<bean id="cardViewActions" class="nc.ui.ta.leave.pf.DynamicActionContainer">
+		<constructor-arg>
+			<ref bean="cardView" />
+		</constructor-arg>
+		<property name="model" ref="appModel"/>		
+		<property name="actions">
+			<list>
+				<ref bean="addActionGroup"/>
+				<ref bean="editAction"/>
+				<ref bean="deleteAction"/>
+				<ref bean="copyAction"/>	
+				<ref bean="separatorAction" />			
+				<ref bean="refreshAction"/>
+				<ref bean="separatorAction" />				
+				<ref bean="commitActionGroup"/>				
+				<ref bean="assistActionGroup" />				
+				<ref bean="separatorAction" />				
+				<ref bean="cardPrintGroup"/>
+			</list>
+		</property>
+		<property name="editActions">
+			<list>
+				<ref bean="saveAction"/>
+				<ref bean="saveAddAction"/>		
+				<ref bean="saveSubmitAction"/>				
+				<ref bean="separatorAction" />				
+				<ref bean="cancelAction"/>
+			</list>
+		</property> 
+	</bean>	
+</beans>
+
+
